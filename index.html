@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <!-- creating container div -->
+    <div class="container">
+        <!-- tiles for age calculator -->
+        <h1 class="title" id="">Age Calculator</h1>
+        <br>
+        <form>
+            <table id="table1">
+                <tr>
+                    <td colspan="3"><label id="l1" for="">Name  </label></td>
+                    <!-- <td><input type="text" class="" id="" placeholder="Enter your name"></td> -->
+                </tr>
+                <tr>
+                    <td  colspan="3"><input id="ip_name" type="text" class="" id="ip_name" placeholder="Enter your name"></td>
+                </tr>
+                <tr>
+                    <td><label id="l2">Date</label></td>
+                    <td><label id="l3">Month</label></td>
+                    <td><label id="l4">Year</label></td>
+                </tr>
+                <tr>
+                    <td><input class="" id="ip_date" type="number" placeholder="dd"></td>
+                    <td><input class="" id="ip_month" type="number" placeholder="mm"></td>
+                    <td><input class="" id="ip_year" type="number" placeholder="yyyy"></td>
+                </tr>
+                <tr id="row_5">
+                    <td colspan="3"><input type="submit" class="" id="sub_btn" onclick="setTimeout(age_cal(), 5000)" title="Submit"></td>
+                </tr>
+            </table>
+        </form>
+        <!-- Div for displaying calculated age -->
+        <p id="msg1"></p>
+        <p id="msg2"></p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
